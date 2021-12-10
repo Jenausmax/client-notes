@@ -1,10 +1,9 @@
 import Entity from '@/models/Entity';
-import Tag from '@/models/Tag';
 
-export default interface Note extends Entity
+export default interface iNote extends Entity
 {
   description: string;
   date: Date;
+  name: string;
 
-  tags: Array<Tag>;
 }

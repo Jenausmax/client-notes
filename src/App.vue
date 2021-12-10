@@ -14,7 +14,6 @@
           transition="scale-transition"
           width="40"
         />
-
         <v-img
           alt="Vuetify Name"
           class="shrink mt-1 hidden-sm-and-down"
@@ -27,18 +26,12 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+        <router-link
+          style="color: blanchedalmond"
+          class="v-btn ml-2"
+          to="/About">Notes</router-link>
     </v-app-bar>
-
     <v-main>
-      <router-link to="/About">About</router-link>
       <router-view/>
     </v-main>
   </v-app>

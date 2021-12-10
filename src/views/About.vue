@@ -1,16 +1,16 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>Notes</h1>
     <notes-table></notes-table>
   </div>
 </template>
 <script>
 import NotesTable from '../components/NotesTable.vue'
-import Component from "vue-class-component";
+import { Component, Vue } from 'vue-property-decorator'
 
 @Component({
-  components: {NotesTable}
+  components: { NotesTable }
 })
-export default class About{
+export default class About extends Vue {
 }
 </script>
